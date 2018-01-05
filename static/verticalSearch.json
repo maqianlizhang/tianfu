@@ -1,0 +1,26 @@
+{
+	"ret": true,
+  "data": {
+    "verticalData": [{
+        "id": "0001",
+        "number": "1",
+        "name": "华友正通商贸有限公司",
+        "code": "0010",
+        "designation": "主营业务收入",
+        "debite": "5000",
+        "credit": "6000",
+        "beforeMoney": "10000",
+        "increaseRate": "50%"
+      }, {
+        "id": "0002",
+        "number": "2",
+        "name": "华友正通商贸有限公司",
+        "code": "0010",
+        "designation": "主营业务收入",
+        "debite": "5000",
+        "credit": "6000",
+        "beforeMoney": "10000",
+        "increaseRate": "50%"
+      }]
+  }
+}

@@ -1,0 +1,41 @@
+{
+	"ret": true,
+  "data": {
+    "verticalInfo": [{
+        "id": "0001",
+        "beforeMoney": 5000,
+        "nowMoney":1000,
+        "designation": "主营业务收入"
+      },{
+        "id": "0002",
+        "beforeMoney": 5000,
+        "nowMoney":500,
+        "designation": "主营业务收入"
+      },{
+        "id": "0003",
+        "beforeMoney": 5000,
+        "nowMoney":3000,
+        "designation": "主营业务收入"
+      },{
+        "id": "0004",
+        "beforeMoney": 5000,
+        "nowMoney":1220,
+        "designation": "主营业务收入"
+      },{
+        "id": "0005",
+        "beforeMoney": 5000,
+        "nowMoney":1675,
+        "designation": "主营业务收入"
+      },{
+        "id": "0006",
+        "beforeMoney": 5000,
+        "nowMoney":4590,
+        "designation": "主营业务收入"
+      },{
+        "id": "0007",
+        "beforeMoney": 5000,
+        "nowMoney":3580,
+        "designation": "主营业务收入"
+      }]
+  }
+}
