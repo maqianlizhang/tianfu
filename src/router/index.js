@@ -11,7 +11,8 @@ export default new Router({
     {
       path: '/',
       name: 'vertical',
-      component: Vertical
+      component: Vertical,
+      alias: '/vertical'
     },
     {
       path: '/horizontal',

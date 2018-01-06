@@ -8,14 +8,14 @@
     </div>
     <div class="nav-container">
       <ul class="nav">
-        <router-link to="/" tag="li" >
-          <a href="javascript:;" :class="checkedlist">利润表-纵向分析</a>
+        <router-link to="/vertical" tag="li" :class="checkedlistV">
+         利润表-纵向分析
         </router-link>
-        <router-link to="/horizontal" tag="li" >
-          <a href="javascript:;" :class="!checkedlist">利润表-横向分析</a>
+        <router-link to="/horizontal" tag="li" :class="checkedlistH">
+         利润表-横向分析
         </router-link>
-        <router-link to="/industry" tag="li">
-          <a href="javascript:;" :class="!checkedlist">利润表-行业分析</a>
+        <router-link to="/industry" tag="li" :class="checkedlistI">
+          利润表-行业分析
         </router-link>
       </ul>
     </div>
@@ -27,7 +27,28 @@ export default {
   name: 'app',
   data () {
     return {
-      checkedlist: 'nav-list'
+      checkedlistV: 'nav-list',
+      checkedlistH: '',
+      checkedlistI: ''
+    }
+  },
+  watch: {
+    '$route' (to, from) {
+      if(to.path === '/vertical') {
+        this.checkedlistV = 'nav-list'
+      } else {
+        this.checkedlistV = ''
+      }
+      if(to.path === '/horizontal') {
+        this.checkedlistH = 'nav-list'
+      } else {
+        this.checkedlistH = ''
+      }
+      if(to.path === '/industry') {
+        this.checkedlistI = 'nav-list'
+      } else {
+        this.checkedlistI = ''
+      }
     }
   }
 }
@@ -70,11 +91,7 @@ export default {
     float: left;
     padding-right: 50px;
   }
-  .nav li a {
-    float: left;
-    color: #000;
-  }
-  .nav li .nav-list {
+  .nav .nav-list {
     color: #00bcd4;
     font-weight: bold;
     font-size: 16px;
