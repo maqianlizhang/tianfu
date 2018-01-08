@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Vertical from '@/pages/vertical/index'
 import Horizontal from '@/pages/horizontal/index'
 import Industry from '@/pages/industryAnalysis/index'
-
+/*import IndustryChild from '@pages/industry'*/
 Vue.use(Router)
 
 export default new Router({
@@ -23,6 +23,10 @@ export default new Router({
       path: '/industry',
       name: 'industry',
       component: Industry
+      /*children: {
+        path: '/industryChild',
+        component: IndustryChild
+      }*/
     }
   ]
 })

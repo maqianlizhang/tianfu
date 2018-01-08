@@ -34,17 +34,17 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      if(to.path === '/vertical') {
+      if (to.path === '/vertical') {
         this.checkedlistV = 'nav-list'
       } else {
         this.checkedlistV = ''
       }
-      if(to.path === '/horizontal') {
+      if (to.path === '/horizontal') {
         this.checkedlistH = 'nav-list'
       } else {
         this.checkedlistH = ''
       }
-      if(to.path === '/industry') {
+      if (to.path === '/industry') {
         this.checkedlistI = 'nav-list'
       } else {
         this.checkedlistI = ''
